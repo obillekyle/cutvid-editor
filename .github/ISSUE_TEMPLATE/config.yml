@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: The feature list
+    url: https://cutvid.okyle.dev/features/
+    about: Everything in the current build, generated from what the application reads.
+  - name: The questions
+    url: https://cutvid.okyle.dev/faq/
+    about: Cost, formats, browsers, and what it will not do.
+  - name: The agent API
+    url: https://cutvid.okyle.dev/AGENTS.md
+    about: Driving the editor from a script.

@@ -1,0 +1,35 @@
+name: Report a problem
+description: A cut that does not behave, a file that will not open, a render that stops.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Nothing from a project is needed to file this, and nothing should be
+        attached that cannot be published.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What was done, and what happened instead of the expected thing.
+      placeholder: |
+        Dragged the last clip past the end of the sequence, and the playhead stayed where it was.
+    validations: { required: true }
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: Chrome 152 on Windows 11
+    validations: { required: true }
+  - type: textarea
+    id: media
+    attributes:
+      label: The media it happened with
+      description: Codec, size, frame rate, and how long. `editorAgent.assets()` prints what the project knows about each one.
+      placeholder: H.264 1920x1080 at 59.94 fps, variable, 12 minutes, AAC stereo.
+  - type: textarea
+    id: console
+    attributes:
+      label: Anything in the console
+      description: The browser's developer tools, Console tab. Paste what is red.
+      render: text

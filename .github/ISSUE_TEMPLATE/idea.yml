@@ -1,0 +1,15 @@
+name: Suggest a change
+description: Something the editor should do, or should do differently.
+labels: [idea]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What it would do
+      description: The editing problem behind it, not only the control that would solve it. Half of what is here arrived as a description of the problem.
+    validations: { required: true }
+  - type: textarea
+    id: elsewhere
+    attributes:
+      label: Where it is done well already
+      description: If another editor does this, naming it (and what it calls the thing) is the fastest way to be understood.
